@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block contents %}  <!--Body Id-->
+        <form action = "{{ url_for('signup') }}" method="POST" class="formstyle">
+            <fieldset id="borderfield">
+            <div  id="borderfrom">
+               <table>
+                  <tr><td>Name</td></tr>
+                  <tr><td> <input type ="text" name = "name" /></td></tr>
+                  <tr><td>Email</td></tr>
+                  <tr><td> <input type ="text" name = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /></td></tr>
+                  <div id="bordersubmit">
+                     <tr><td><span style="align:center;"> <input type = "submit" value = "submit" /> </span></td></tr>
+                  </div>
+            </table>
+            </div>
+            <div>
+                {% if message %}
+                    <div style="text-align:center;">
+                        <span style="font-size:12px; font-weight:bold">
+                            {{ message }}
+                        </span>
+                    </div>
+                {% endif %}
+            </div>
+            <small><a href="{{ url_for('signin') }}"> Login!</a></small>
+            </fieldset>
+      </form>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block contents %}
+   <form method = "POST" class="formstyle" action="{{ url_for('signin') }}">
+            <fieldset id="borderfrom">
+            <table>
+                <tr><td>Email</td></tr>
+                <tr><td> <input type ="text" name = "mail" placeholder="Enter Email" required /></td></tr>
+                <tr><td>Password</td></tr>
+                <tr><td> <input type ="text" name = "password" placeholder="Enter Password" required /></td></tr>
+
+                <tr><td><input type = "submit" value = "Login" /></td></tr>
+            </table>
+            <div>
+                {% if message %}
+                    <div style="text-align:center;">
+                        <span style="font-size:12px; font-weight:bold">
+                            {{ message }}
+                        </span>
+                    </div>
+                {% endif %}
+            </div>
+            </fieldset>
+            <small><a href="{{ url_for('signup') }}"> Registration!</a></small>
+      </form>
+    </form>
+{% endblock %}

@@ -1,0 +1,131 @@
+#bid {
+    align-content: center;
+    text-align: center;
+}
+
+.main_form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.main_form>div {
+    width: 30%;
+}
+
+.main_form>div:nth-child(odd) {
+    background: rgb(95, 83, 87);
+}
+
+#statustext {
+    color: blue;
+    margin: 0px;
+}
+
+.formstyle {
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+    line-height: 20px;
+    background-color: rgb(24, 15, 49);
+    border-radius: 8px;
+}
+
+#borderfield {
+    border: 3px solid rgb(24, 15, 49);
+    border-radius: 8px;
+    height: auto;
+    width: auto;
+}
+
+#borderfrom {
+    text-align: left;
+}
+
+#bordersubmit {
+    align-items: center;
+}
+
+input[type=text],
+select {
+    text-align: left;
+    width: 160%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date],
+select {
+    text-align: left;
+    width: 160%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 60%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.searchresult {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 1px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    background-color: #eaeaea;
+    display: block;
+    padding: 1em;
+    overflow-y: auto;
+    text-align: center;
+}
+
+<!--Table formatting-->#resulttable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#resulttable td,
+#resulttable th {
+    font-family: times;
+    padding: 8px;
+}
+
+#resulttable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 72px;
+    padding-right: 72px;
+    text-align: left;
+    background-color: rgb(161, 109, 204);
+    color: white;
+}
